@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Cetrekan Lampu Sesi 4</title>
+    </head>
+    <body>
+        <img src="assets/images/off.gif" alt="" id="Lampu1"/>
+        <h1>CETREKAN LAMPU ON OFF</h1>
+        <button onclick="saklar('on')">Nyalakan Lampu</button>
+        <button onclick="saklar('off')">Matikan Lampu Lampu</button>
+
+        <!-- ini adalah  script js kita -->
+        <script>
+            function saklar(params) {
+
+                let Lampu1 = document.getElementById('Lampu1')
+
+                if (params == "on"){
+                    // nyala
+                    Lampu1.src = "assets/images/on.gif"
+                }
+                if (params == "off"){
+                    // mati
+                    Lampu1.src = "assets/images/off.gif"
+                }
+
+                return Lampu1
+
+            }
+        </script>
+    </body>
+</html>
